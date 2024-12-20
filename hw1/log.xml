@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<Logs>
+  <Action user="nikitassh" time="2024-12-20 04:14:08" command="ls"/>
+  <Action user="nikitassh" time="2024-12-20 04:14:11" command="cd test_src"/>
+  <Action user="nikitassh" time="2024-12-20 04:14:12" command="ls"/>
+  <Action user="nikitassh" time="2024-12-20 04:14:13" command="cd .."/>
+  <Action user="nikitassh" time="2024-12-20 04:14:14" command="ls"/>
+</Logs>

@@ -1,0 +1,2 @@
+user,hostname,tar_file,log_file
+nikitassh,localhost,./tree.tar,./log.xml

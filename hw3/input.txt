@@ -1,0 +1,60 @@
+:: Это комментарий
+def user_name := "example string";
+def PI_value := 3.14159;
+def DEPTH_LIMIT := 4;
+def APP_VERSION := 2.1;
+
+--[[
+Многострочный комментарий
+В этой части мы описываем основные параметры проекта,
+которые влияют на его работу.
+]]
+
+dict(
+    user = "Alex",
+    age = 28,
+    location = "Germany",
+    language_preference = "German",
+    city = "Berlin"
+)
+
+def total := .[DEPTH_LIMIT + APP_VERSION];
+
+--[[
+Комментарий, описывающий особенности системы
+Каждая строка может быть полезной для описания
+архитектуры проекта.
+]]
+
+dict(
+    environment = "staging",
+    request_timeout = 150,
+    retries_attempts = 5
+)
+
+def FACTOR := 15;
+def threshold_value := .[PI_value * FACTOR];
+
+dict(
+    value_sum = .[total + threshold_value],
+    is_active = true
+)
+
+#( 10, 20, 30, 40, 50 )
+
+dict(
+    primary_color = "blue",
+    item_size = "medium"
+)
+
+--[[
+Пример вычисления итогового значения
+]]
+
+def final_result := .[total - threshold_value];
+dict(
+    state = "initialized",
+    final_computed_value = .[final_result + 200]
+)
+
+:: Конец файла

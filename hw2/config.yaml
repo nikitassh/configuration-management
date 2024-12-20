@@ -1,0 +1,4 @@
+visualizer_path: /opt/homebrew/bin/mmdc
+package_name: axios
+output_image_path: ./graph.png
+max_depth: 3

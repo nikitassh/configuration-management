@@ -19,7 +19,7 @@ def transform_input_text(input_text):
         variable_map[constant_name] = constant_value
         return f"{constant_name} = {constant_value}"
 
-    input_text = re.sub(r'def\s+([a-zA-Z_][a-zA-Z0-9]*)\s*:=\s*(.*);', process_constant, input_text)
+    input_text = re.sub(r'set\s+([a-zA-Z_][a-zA-Z0-9]*)\s*=\s*(.*)', process_constant, input_text)
 
     def handle_dict(match):
         dict_entries = match.group(1).split(',')

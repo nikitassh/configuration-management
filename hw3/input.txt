@@ -1,8 +1,8 @@
 :: Это комментарий
-def user_name := "example string";
-def PI_value := 3.14159;
-def DEPTH_LIMIT := 4;
-def APP_VERSION := 2.1;
+set user_name = "example string"
+set PI_value = 3.14159
+set DEPTH_LIMIT = 4
+set APP_VERSION = 2.1
 
 --[[
 Многострочный комментарий
@@ -18,7 +18,7 @@ dict(
     city = "Berlin"
 )
 
-def total := .[DEPTH_LIMIT + APP_VERSION];
+set total = .[DEPTH_LIMIT + APP_VERSION].
 
 --[[
 Комментарий, описывающий особенности системы
@@ -32,8 +32,8 @@ dict(
     retries_attempts = 5
 )
 
-def FACTOR := 15;
-def threshold_value := .[PI_value * FACTOR];
+set FACTOR = 15
+set threshold_value = .[PI_value * FACTOR]
 
 dict(
     value_sum = .[total + threshold_value],
@@ -51,7 +51,7 @@ dict(
 Пример вычисления итогового значения
 ]]
 
-def final_result := .[total - threshold_value];
+set final_result = .[total - threshold_value]
 dict(
     state = "initialized",
     final_computed_value = .[final_result + 200]

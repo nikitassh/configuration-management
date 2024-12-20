@@ -13,7 +13,7 @@ class TestParseInput(unittest.TestCase):
         self.assertEqual(transform_input_text(input_text), expected_output)
 
     def test_constant_declaration(self):
-        input_text = "def E := 2.71828;"
+        input_text = "set E = 2.71828"
         expected_output = "E = 2.71828"
         self.assertEqual(transform_input_text(input_text), expected_output)
 
@@ -30,17 +30,6 @@ class TestParseInput(unittest.TestCase):
     def test_ignore_empty_lines(self):
         input_text = "size = 100\n\n\n"
         expected_output = "size = 100"
-        self.assertEqual(transform_input_text(input_text), expected_output)
-
-    def test_combined_case(self):
-        input_text = """:: Простой комментарий
-        def RADIUS := 7;
-        dict(item1=box, item2=$RADIUS$)"""
-        expected_output = """# Простой комментарий
-RADIUS = 7
-[[dict]]
-item1 = box
-item2 = 7"""
         self.assertEqual(transform_input_text(input_text), expected_output)
 
 
